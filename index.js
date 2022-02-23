@@ -5,7 +5,8 @@ const nunjucks = require("nunjucks")
 
 const { sequelize } = require("./models")
 
-const pageRouter = require("./routes/page")
+const pageRouter = require("./routes/pageRoutes")
+const itemRouter = require("./routes/itemRoutes")
 
 const app = express()
 app.set("view engine", "html")
@@ -29,6 +30,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use("/", pageRouter)
+app.use("/items", itemRouter)
 
 app.use((req, res, next) => {
   const error = new Error(`${req.method} ${req.url} 라우터가 없습니다.`)
