@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex flex-col items-center py-10">
+      <form class="flex mb-5">
+        <div class="field mr-3">
+          <label class="label">상품 이름</label>
+          <div class="control">
+            <input class="input" type="text" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">수량</label>
+          <div class="control flex">
+            <input class="input mr-3" type="text" />
+            <input
+              class="button is-success font-bold"
+              type="submit"
+              text="생성"
+            />
+          </div>
+        </div>
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>상품 이름</th>
+            <th>수량</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td>바나나</td>
+            <td>6</td>
+            <th><button class="delete mt-0.5"></button></th>
+          </tr>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
