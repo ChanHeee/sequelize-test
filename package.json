@@ -4,6 +4,7 @@
   "description": "## mysql 연동하여 조회, 생성, 삭제 연습",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
